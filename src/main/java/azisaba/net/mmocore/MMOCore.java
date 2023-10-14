@@ -1,5 +1,6 @@
 package azisaba.net.mmocore;
 
+import azisaba.net.mmocore.command.CheckFish;
 import azisaba.net.mmocore.command.SaveSkin;
 import azisaba.net.mmocore.listener.FishingListener;
 import azisaba.net.mmocore.listener.TutorialListener;
@@ -44,6 +45,7 @@ public final class MMOCore extends JavaPlugin {
         pm.registerEvents(new TutorialListener(this), this);
 
         Objects.requireNonNull(getCommand("saveSkin")).setExecutor(new SaveSkin());
+        Objects.requireNonNull(getCommand("checkCommand")).setExecutor(new CheckFish(this));
 
         checkAFK();
     }

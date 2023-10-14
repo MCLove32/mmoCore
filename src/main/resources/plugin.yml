@@ -10,6 +10,8 @@ commands:
   saveSkin:
     description: "LibsDisguises用のアドミンコマンド"
     permission: azisaba.command.saveSkin
+  checkCommand:
+    description: checkCommand
 
 permissions:
   azisaba.command.saveSkin:
