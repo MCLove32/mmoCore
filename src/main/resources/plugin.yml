@@ -1,0 +1,16 @@
+name: mmoCore
+version: '${project.version}'
+main: azisaba.net.mmocore.MMOCore
+api-version: '1.20'
+depend:
+  - mmoUtils
+  - MythicMobs
+
+commands:
+  saveSkin:
+    description: "LibsDisguises用のアドミンコマンド"
+    permission: azisaba.command.saveSkin
+
+permissions:
+  azisaba.command.saveSkin:
+    default: op
