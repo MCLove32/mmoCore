@@ -24,7 +24,7 @@ public class WorldListener implements Listener {
     public void onBorder(@NotNull EntityDamageEvent e) {
 
         if (e.getEntity() instanceof Player p &&
-                e.getCause().equals(EntityDamageEvent.DamageCause.SUFFOCATION) &&
+                e.getCause().equals(EntityDamageEvent.DamageCause.WORLD_BORDER) &&
                 !p.getGameMode().equals(GameMode.CREATIVE) &&
                 !p.getGameMode().equals(GameMode.SPECTATOR)) {
 
